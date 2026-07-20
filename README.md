@@ -27,7 +27,7 @@ The initial strategy is grounded in official OpenAI materials available in July 
 - In May 2026, 70.2% of sampled individual users made at least one Codex request estimated to exceed one hour of human work.
 - OpenAI launched its Partner Network in June 2026 to help organizations move from AI ambition to measurable outcomes.
 
-See [`docs/01-market-audit.md`](docs/01-market-audit.md) and [`docs/06-claim-evidence-matrix.md`](docs/06-claim-evidence-matrix.md) for sources, qualifications, and freshness rules.
+See [`docs/01-market-audit.md`](docs/01-market-audit.md), [`docs/06-claim-evidence-matrix.md`](docs/06-claim-evidence-matrix.md), and [`docs/08-documentation-integrity.md`](docs/08-documentation-integrity.md) for sources, qualifications, review dates, and integrity controls.
 
 ## Target segments
 
@@ -89,8 +89,9 @@ The workflow is designed to produce inspectable artifacts rather than impressive
 - [`docs/03-eight-week-pilot.md`](docs/03-eight-week-pilot.md) — bounded pilot scope, delivery plan, and acceptance criteria.
 - [`docs/04-partnership-proposal.md`](docs/04-partnership-proposal.md) — proposed collaboration structure for OpenAI or an implementation partner.
 - [`docs/05-measurement-framework.md`](docs/05-measurement-framework.md) — activation, retention, value, and revenue-attribution model.
-- [`docs/06-claim-evidence-matrix.md`](docs/06-claim-evidence-matrix.md) — material claims, official sources, qualifiers, and freshness rules.
+- [`docs/06-claim-evidence-matrix.md`](docs/06-claim-evidence-matrix.md) — material claims, official sources, qualifiers, and machine-checkable review dates.
 - [`docs/07-partner-entry-strategy.md`](docs/07-partner-entry-strategy.md) — proof-led co-delivery and direct Partner Network paths.
+- [`docs/08-documentation-integrity.md`](docs/08-documentation-integrity.md) — link, freshness, workflow-security, and manual-fallback controls.
 
 ### Runnable pilot kit
 
@@ -108,7 +109,7 @@ The workflow is designed to produce inspectable artifacts rather than impressive
 - [`pilot/follow-up-form.md`](pilot/follow-up-form.md) — day-7 and day-30 retention follow-up.
 - [`evidence/metric-dictionary.md`](evidence/metric-dictionary.md) — frozen measurement definitions.
 - [`evidence/failure-register.md`](evidence/failure-register.md) — failure taxonomy and incident record.
-- [`evidence/cases/CAL-001/case-record.md`](evidence/cases/CAL-001/case-record.md) — first real internal process-validation case.
+- [`evidence/cases/CAL-001/case-record.md`](evidence/cases/CAL-001/case-record.md) — first real internal process-validation case and owner sign-off.
 - [`examples/anonymized-qa-product-audit.md`](examples/anonymized-qa-product-audit.md) — synthetic worked example; not performance evidence.
 
 ## Operating principles
@@ -121,32 +122,33 @@ The workflow is designed to produce inspectable artifacts rather than impressive
 6. **Attribution must be agreed in advance.** Performance compensation requires a bounded cohort, baseline, tracking method, exclusions, and time window.
 7. **Failures remain visible.** Rejected findings and negative time savings are part of the evidence.
 8. **No baseline, no savings claim.** Missing pre-run measurement invalidates time and ROI reporting.
+9. **Volatile claims expire.** Partner-facing facts require claim-level review dates and integrity checks.
 
 ## CAL-001 result
 
 The first internal validation case inspected exact source state `a78a5c7fa05cdab877c73fe5aaab8007a3cb8a41`.
 
-Provisional result:
+Final result:
 
-- `partially accepted` pending owner sign-off;
-- weighted facilitator score: `3.10 / 4.00`;
+- owner decision: `partially accepted`;
+- weighted score on the audited state: `3.10 / 4.00`;
 - no valid time-saved or ROI metric because the baseline was not frozen before the run;
 - four confirmed process or documentation gaps;
 - no safety or authority violation observed.
 
-The case triggered corrections to pricing interpretation, claim traceability, pilot assets, participant consent, and partner-entry strategy.
+The case triggered corrections to pricing interpretation, claim traceability, pilot assets, participant consent, partner-entry strategy, and documentation-integrity controls.
 
 ## Immediate milestone
 
-Complete owner review of CAL-001, merge the corrected pilot kit, then run four additional friendly participant workflows before external performance-based outreach.
+Complete the documentation-integrity gate, merge the corrected stack in order, then run four additional friendly participant workflows before external performance-based outreach.
 
 The seed cohort does not claim attributable subscription or API revenue.
 
 ## Status
 
-**Phase:** Pilot Kit v0.2 and CAL-001 remediation  
+**Phase:** Pilot Kit v0.2, CAL-001 signed off, integrity controls in review  
 **Delivery mode:** stacked draft pull requests  
-**Next gate:** owner sign-off, then four additional real seed cases.
+**Next gate:** documentation-integrity validation, then four additional real seed cases.
 
 ## Primary official sources
 
