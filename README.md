@@ -80,11 +80,27 @@ The workflow is designed to produce inspectable artifacts rather than impressive
 
 ## Repository map
 
+### Strategy
+
 - [`docs/01-market-audit.md`](docs/01-market-audit.md) — current product, pricing, adoption, and messaging audit.
 - [`docs/02-plf-launch-strategy.md`](docs/02-plf-launch-strategy.md) — Product Launch Formula-inspired education and conversion sequence.
 - [`docs/03-eight-week-pilot.md`](docs/03-eight-week-pilot.md) — bounded pilot scope, delivery plan, and acceptance criteria.
 - [`docs/04-partnership-proposal.md`](docs/04-partnership-proposal.md) — proposed collaboration structure for OpenAI or an implementation partner.
 - [`docs/05-measurement-framework.md`](docs/05-measurement-framework.md) — activation, retention, value, and revenue-attribution model.
+
+### Runnable pilot kit
+
+- [`pilot/README.md`](pilot/README.md) — sequence, evidence requirements, statuses, and commercial gate.
+- [`pilot/participant-screener.md`](pilot/participant-screener.md) — suitability and exclusion screening.
+- [`pilot/baseline-form.md`](pilot/baseline-form.md) — frozen human-only baseline.
+- [`pilot/workflow-map.md`](pilot/workflow-map.md) — bounded QA/Product audit workflow and human gates.
+- [`pilot/safety-boundary.md`](pilot/safety-boundary.md) — authority, data, environment, and stop boundaries.
+- [`pilot/acceptance-rubric.md`](pilot/acceptance-rubric.md) — stable accepted, partially accepted, and rejected criteria.
+- [`pilot/outcome-receipt.md`](pilot/outcome-receipt.md) — auditable time, quality, failure, and economics summary.
+- [`pilot/follow-up-form.md`](pilot/follow-up-form.md) — day-7 and day-30 retention follow-up.
+- [`evidence/metric-dictionary.md`](evidence/metric-dictionary.md) — frozen measurement definitions.
+- [`evidence/failure-register.md`](evidence/failure-register.md) — failure taxonomy and incident record.
+- [`examples/anonymized-qa-product-audit.md`](examples/anonymized-qa-product-audit.md) — synthetic worked example; not performance evidence.
 
 ## Operating principles
 
@@ -94,24 +110,27 @@ The workflow is designed to produce inspectable artifacts rather than impressive
 4. **No artificial scarcity.** Any launch window must be tied to real cohort capacity or live support.
 5. **Human authority remains explicit.** Agents may investigate, draft, test, and propose; accountable humans approve consequential actions.
 6. **Attribution must be agreed in advance.** Performance compensation requires a bounded cohort, baseline, tracking method, exclusions, and time window.
+7. **Failures remain visible.** Rejected findings and negative time savings are part of the evidence.
 
 ## Immediate milestone
 
-Run a small seven-day proof cohort with 10–20 participants and measure:
+Run the templates with **5 friendly participants** before external performance-based outreach and measure:
 
 - first completed workflow;
 - time to first value;
-- estimated hours saved;
+- net human time saved after setup, review, and rework;
 - artifact quality and acceptance;
+- false positives, omissions, and boundary incidents;
 - repeat usage within seven and thirty days;
-- plan-selection confidence;
-- attributable upgrades or paid usage where measurable.
+- plan-selection confidence.
+
+The seed cohort does not claim attributable subscription or API revenue.
 
 ## Status
 
-**Phase:** initial strategy and pilot design  
-**Delivery mode:** draft pull request for review  
-**Next gate:** approve the first workflow, participant profile, and measurement contract before recruitment.
+**Phase:** pilot kit v0.1 ready for review  
+**Delivery mode:** stacked draft pull requests  
+**Next gate:** run one real internal case, revise the kit, then recruit four additional friendly participants.
 
 ## Primary official sources
 
