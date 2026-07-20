@@ -1,0 +1,112 @@
+name: Documentation integrity
+
+on:
+  pull_request_target:
+    paths:
+      - "**/*.md"
+      - "scripts/check_docs_integrity.py"
+      - "tests/test_docs_integrity.py"
+      - ".github/workflows/docs-integrity.yml"
+  push:
+    branches:
+      - main
+      - "agent/**"
+    paths:
+      - "**/*.md"
+      - "scripts/check_docs_integrity.py"
+      - "tests/test_docs_integrity.py"
+      - ".github/workflows/docs-integrity.yml"
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-integrity-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  integrity:
+    name: Check links, claims, and guardrails
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out trusted checker
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.event_name == 'pull_request_target' && github.event.repository.default_branch || github.sha }}
+          path: checker
+          persist-credentials: false
+
+      - name: Check out pull request content as data
+        if: github.event_name == 'pull_request_target'
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: target
+          persist-credentials: false
+
+      - name: Check out current repository content as data
+        if: github.event_name != 'pull_request_target'
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          path: target
+          persist-credentials: false
+
+      - name: Run trusted checker unit tests
+        run: python3 -m unittest discover -s checker/tests -p "test_*.py" -v
+
+      - name: Run trusted checker
+        id: integrity
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          mkdir -p artifacts
+          external_flag=""
+          if [[ "$EVENT_NAME" == "schedule" || "$EVENT_NAME" == "workflow_dispatch" ]]; then
+            external_flag="--check-external"
+          fi
+          python3 checker/scripts/check_docs_integrity.py \
+            --root target \
+            --as-of "$(date -u +%F)" \
+            --report artifacts/docs-integrity-report.json \
+            $external_flag
+
+      - name: Add report summary
+        if: always()
+        shell: bash
+        run: |
+          if [[ -f artifacts/docs-integrity-report.json ]]; then
+            python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+
+          report = json.loads(Path("artifacts/docs-integrity-report.json").read_text())
+          print("## Documentation integrity")
+          print()
+          print(f"- Checker: `{report['checker_version']}`")
+          print(f"- As of: `{report['as_of']}`")
+          print(f"- External checked: `{report['external_checked']}`")
+          for status, count in report["summary"].items():
+              print(f"- {status}: `{count}`")
+          PY
+          else
+            echo "## Documentation integrity" >> "$GITHUB_STEP_SUMMARY"
+            echo "Report was not produced." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload integrity report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: docs-integrity-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/docs-integrity-report.json
+          if-no-files-found: warn
+          retention-days: 30
