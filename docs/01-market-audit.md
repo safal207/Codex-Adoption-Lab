@@ -1,32 +1,22 @@
 # Codex market and pricing audit
 
-**Snapshot date:** 2026-07-21  
-**Scope:** public Codex positioning, personal and business plan ladder, credit mechanics, API economics, and adoption opportunity.
+**Source review date:** 2026-09-17
+
+**Scope:** plan access and billing structure, historical adoption evidence, and Lab adoption hypotheses. This is not a current model-price catalogue.
 
 Material factual claims are mapped in [`06-claim-evidence-matrix.md`](06-claim-evidence-matrix.md). Live pricing, availability, limits, and policies remain the source of truth.
 
-## 1. Confirmed product direction
+## 1. Historical adoption evidence
 
-Codex is no longer presented only as a single coding assistant. Official OpenAI materials describe:
-
-- a desktop command center for managing multiple agents and long-running tasks;
-- isolated worktrees for parallel work on the same repository;
-- use across app, CLI, IDE, cloud, and mobile;
-- mobile review of screenshots, terminal output, diffs, tests, questions, and approvals;
-- growing use by analysts, legal teams, recruiting teams, and other knowledge workers;
-- movement from short chat interactions to delegated tasks that can run for minutes or hours.
-
-See claims `C-010` through `C-012` in the evidence matrix.
-
-### Adoption signals
-
-OpenAI reported in June and July 2026 that:
+OpenAI's June 2026 publications reported that:
 
 - Codex had more than 5 million weekly active users;
 - knowledge workers represented about 20% of users and were growing more than three times as fast as developers;
 - in May 2026, 70.2% of sampled individual users made at least one Codex request estimated to exceed one hour of human work.
 
-The words `sampled`, `estimated`, and the May 2026 measurement period are material qualifiers. These figures support a broader adoption thesis, but they do **not** prove that any specific launch tactic will increase paid conversion. That remains an experiment.
+These are historical observations, not September user counts or Lab results. The task-duration estimate used an LLM judge and a random 0.1% sample of individual users. It is not a measurement of time saved. See claims `C-010` through `C-012`.
+
+The Lab infers an opportunity to help people adopt broader workflows. Whether a guided first task improves paid conversion remains an experiment.
 
 ## 2. Current offer ladder
 
@@ -36,8 +26,8 @@ The public ChatGPT plan ladder currently includes:
 |---|---|---|
 | Free | Limited Codex access | Demonstrate that an agent can complete a real task |
 | Go | Limited Codex access | Keep light users engaged before professional adoption |
-| Plus | Expanded Codex usage and GPT-5.6 access | Establish a weekly professional workflow |
-| Pro | 5x or 20x more usage and maximum Codex tasks | Support intensive, parallel, daily agent work |
+| Plus | Expanded Codex usage | Establish a weekly professional workflow |
+| Pro | Maximum Codex tasks, subject to limits | Support intensive, parallel, daily agent work |
 | Business | Shared secure workspace, administration, analytics, budgeting, and Codex | Move from individual success to team deployment |
 | Enterprise | Custom scale, controls, support, and commercial terms | Govern agentic work in large organizations |
 
@@ -45,26 +35,15 @@ The `Primary adoption job` column is a Lab interpretation, not official plan lan
 
 ### Business pricing
 
-OpenAI currently advertises ChatGPT Business at:
+At this review, Business offers Standard and Premium seats. USD monthly equivalents are $20/$100 billed annually, or $25/$125 billed monthly. A workspace needs two seats in total; types can be mixed. Both include Codex, while API billing is separate. Regional pricing may differ.
 
-- **$20 per standard user/month**, billed annually;
-- **$25 per standard user/month**, billed monthly;
-- minimum two standard ChatGPT seats.
+Legacy Codex-only seats are restricted to eligible workspaces that added that seat type before June 24, 2026. See claims `C-002` through `C-004` and the [Business overview](https://help.openai.com/en/articles/8792828-what-is-chatgpt-team/).
 
-Starting June 24, 2026, a new Business workspace—or a workspace that had not previously added a usage-based Codex-only seat—could no longer add its first Codex-only seat. Eligible existing workspaces may continue to manage those seats. Standard Business seats continue to include ChatGPT and Codex under current plan and credit mechanics.
+## 3. Billing structure at review
 
-See claims `C-002` through `C-004`.
+For credit-based workspaces, the current [ChatGPT rate card](https://help.openai.com/en/articles/11481834) meters Work and Codex by input, cached-input, and output tokens. Some Enterprise workspaces still use legacy rates until migration; the applicable agreement matters. See `C-019` and `C-020`.
 
-## 3. April 2026 pricing transition
-
-The pricing story changed materially in April:
-
-- **April 2, 2026:** Codex pricing moved from approximate per-message pricing toward token-aligned usage for Plus, Pro, Business, and new Enterprise plans.
-- **April 23, 2026:** the remaining existing Enterprise plans, including Edu, Health, Gov, and ChatGPT for Teachers, were moved to the updated approach.
-
-The official rate card says Codex costs approximately **$100–$200 per developer per month on average**, with large variation based on model choice, number of instances, automations, fast mode, and workload. This is a broad OpenAI average, not a forecast for a specific participant or organization.
-
-See claims `C-005` and `C-006`.
+The July migration summary and average-spend estimate have been removed from current guidance. Their former source now redirects to a different rate card. See the [review record](09-source-review-2026-09-17.md).
 
 ### Marketing consequence
 
@@ -80,28 +59,13 @@ Token alignment improves cost traceability, but it also increases cognitive load
 
 This is economically rational infrastructure pricing, but it is not yet a simple adoption story for a first-time buyer. That conclusion is a Lab inference.
 
-## 4. API price architecture
+## 4. Cost measurement protocol
 
-Published GPT-5.6 API prices per 1 million tokens at the snapshot date:
+The static GPT-5.6 price table is retired. The [release page](https://openai.com/index/gpt-5-6/) now carries later price-change notices, so the July table cannot support a current budget. Old preview wording is also unsuitable for a current availability recommendation.
 
-| Model | Intended use | Uncached input | Cache write* | Cache read / cached input | Output |
-|---|---|---:|---:|---:|---:|
-| GPT-5.6 Sol | Frontier capability for complex professional work | $5.00 | $6.25 | $0.50 | $30.00 |
-| GPT-5.6 Terra | Balance of intelligence and cost | $2.50 | $3.125 | $0.25 | $15.00 |
-| GPT-5.6 Luna | Cost-sensitive, high-volume workflows | $1.00 | $1.25 | $0.10 | $6.00 |
+Before a participant run, record the actual model, account access, billing mode, applicable live rates, date, and budget in the [context pack](../pilot/context-pack.md). Check API availability separately from subscription access. Measure usage and human review effort for the run; account for retries and rejected outputs.
 
-`*` OpenAI states that GPT-5.6 cache writes are billed at 1.25x the uncached input rate, while cache reads receive a 90% cached-input discount.
-
-### Availability and interpretation boundary
-
-- ChatGPT plan availability and API model availability are separate questions.
-- The model comparison page lists the published API token prices and supported endpoints.
-- Current preview, trusted-access, rate-limit, region, and organization eligibility language must be checked before an external recommendation.
-- The values above are token prices, not the total cost of a completed workflow.
-
-Prompts above a published long-context threshold can use different multipliers. Tool calls, processing modes, agent loops, retries, and human correction can add costs. Production economics therefore need to be measured per **accepted completed workflow**, not estimated from headline token prices alone.
-
-See claims `C-007` through `C-009`.
+The Lab's decision unit is **cost per accepted completed workflow**. A model's token price alone cannot establish that result. Retired claim IDs `C-007` through `C-009` must not be reused as current guidance.
 
 ## 5. Product-to-market gap
 
@@ -197,10 +161,8 @@ These are experiments, not proven conversion mechanisms.
 - [ChatGPT plans](https://chatgpt.com/pricing/)
 - [ChatGPT Business pricing](https://openai.com/business/pricing/)
 - [What is ChatGPT Business?](https://help.openai.com/en/articles/8792828-what-is-chatgpt-team/)
-- [Codex rate card](https://help.openai.com/en/articles/20001106)
-- [Codex flexible pricing for teams](https://openai.com/index/codex-flexible-pricing-for-teams/)
-- [GPT-5.6](https://openai.com/index/gpt-5-6/)
-- [GPT-5.6 preview and pricing](https://help.openai.com/en/articles/20001325-a-preview-of-gpt-5-6-sol-terra-and-luna/)
+- [ChatGPT rate card, including Work and Codex](https://help.openai.com/en/articles/11481834)
+- [GPT-5.6 release and subsequent price-change notices](https://openai.com/index/gpt-5-6/)
 - [GPT-5.6 model comparison](https://developers.openai.com/api/docs/models/compare)
 - [Introducing the Codex app](https://openai.com/index/introducing-the-codex-app/)
 - [Work with Codex from anywhere](https://openai.com/index/work-with-codex-from-anywhere/)

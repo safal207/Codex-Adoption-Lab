@@ -258,4 +258,4 @@ A 30-minute qualification discussion covering:
 
 - [OpenAI Partner Network](https://openai.com/business/partners/)
 - [Introducing the OpenAI Partner Network](https://openai.com/index/introducing-openai-partner-network/)
-- [Partner Network interest form](https://openai.com/form/partner-network-interest/)
+- [Partner Network enrollment](https://partners.openai.com/)
