@@ -43,7 +43,7 @@ Legacy Codex-only seats are restricted to eligible workspaces that added that se
 
 For credit-based workspaces, the current [ChatGPT rate card](https://help.openai.com/en/articles/11481834) meters Work and Codex by input, cached-input, and output tokens. Some Enterprise workspaces still use legacy rates until migration; the applicable agreement matters. See `C-019` and `C-020`.
 
-The July migration summary and average-spend estimate have been removed from current guidance. Their former source now redirects to a different rate card. See the [review record](09-source-review-2026-09-17.md).
+The July migration summary has been removed because the redirected source does not support it as current guidance. The average-spend estimate remains in the source, but is omitted here because it cannot establish a participant budget. See the [review record](09-source-review-2026-09-17.md).
 
 ### Marketing consequence
 
