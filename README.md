@@ -1,29 +1,37 @@
 # Codex Adoption Lab
 
-**Codex Adoption Lab** is an evidence-based go-to-market and adoption initiative for helping QA professionals, product managers, analysts, founders, and small technology teams turn Codex capabilities into completed workflows, accepted artifacts, and sustainable usage decisions.
+**One Codex task → one inspectable artifact → a human decision.**
 
-This is an independent proposal and is not affiliated with or endorsed by OpenAI.
+An open collection of guides, templates, and review protocols for QA engineers, analysts, product managers, and small technical teams. Start with a bounded task, check the result against its sources, and record what was accepted, rejected, or left unknown.
+
+This is a documentation and pilot kit, not an automated verifier or a hosted service. Independent project; not affiliated with or endorsed by OpenAI.
+
+## Start here
+
+- **Try one task:** [English guide](external/first-ai-work-task-en.md) · [Русская инструкция](external/first-ai-work-task-ru.md). The English guide includes a synthetic practice specification; no private code or live service is needed for that exercise.
+- **See the output format:** [Worked QA/Product audit](examples/anonymized-qa-product-audit.md). This example is synthetic, not evidence of performance or customer results.
+- **Propose your task:** [Open a workflow proposal](https://github.com/safal207/Codex-Adoption-Lab/issues/new?template=propose-workflow.md) using a public or synthetic example, a source version, and acceptance checks. [Preview the template](.github/ISSUE_TEMPLATE/propose-workflow.md).
+
+**Evidence boundary:** [CAL-001](evidence/cases/CAL-001/case-record.md) is one real internal audit, marked **partially accepted**. It has no valid time-saved or ROI measurement. External participant outcomes are not yet demonstrated.
+
+**Keep private material out of issues.** Do not post credentials, personal data, customer records, private code, or confidential screenshots. An issue is a proposal, not enrollment, a response-time promise, a system-access grant, or consent to publish a case study. The [formal pilot start gate](pilot/README.md) still applies.
 
 ## Thesis
 
-Codex is moving from a coding assistant toward a command center for parallel agents and broader knowledge work. The product capability is expanding faster than the average user's ability to understand:
+The Lab's working hypothesis is that completing one bounded, human-reviewed workflow is a better starting point for adoption than explaining more features. The questions are practical:
 
-1. what work to delegate;
-2. how to achieve a first successful outcome;
-3. which subscription or usage model fits that outcome;
-4. how to measure the economic value of adoption.
+1. What work can be delegated safely?
+2. What artifact would count as a useful result?
+3. How will a human check it?
+4. What evidence is needed before making a usage or budget decision?
 
-The Lab focuses on that gap.
-
-> The opportunity is not to explain more features. It is to help a user complete one valuable workflow, prove the result, and then select the right plan with confidence.
+This hypothesis requires real participant measurement; the kit does not establish it as proven.
 
 ## Evidence and scope
 
-**Documentation review: 2026-09-17.** The repository contains a pilot kit and one internal process-validation case, CAL-001. It does not yet demonstrate external participant outcomes or validated time savings.
+The [September 28 partial source review](docs/10-source-review-2026-09-28.md) records the claims rechecked and the remaining approval boundaries. The [September 17 review](docs/09-source-review-2026-09-17.md) records earlier corrections and withdrawn claims. Source access, automated freshness checks, external HTTP reachability, and human approval are separate checks.
 
-The [market audit](docs/01-market-audit.md) separates current product facts from dated adoption research. Pricing and access must be checked for the participant's actual account before a recommendation. The [source-review record](docs/09-source-review-2026-09-17.md) explains the September corrections and the claims withdrawn from current guidance.
-
-See [`docs/01-market-audit.md`](docs/01-market-audit.md), [`docs/06-claim-evidence-matrix.md`](docs/06-claim-evidence-matrix.md), and [`docs/08-documentation-integrity.md`](docs/08-documentation-integrity.md) for sources, qualifications, review dates, and integrity controls.
+The [market audit](docs/01-market-audit.md) separates dated product information from historical adoption research. Pricing and access must be checked for the participant's actual account before a recommendation. Consult the [claim–evidence matrix](docs/06-claim-evidence-matrix.md) and [documentation-integrity rules](docs/08-documentation-integrity.md), rather than treating an old price or model table as current.
 
 ## Target segments
 
@@ -34,47 +42,45 @@ The first pilot is intentionally narrow:
 - product managers;
 - founders and small technical teams.
 
-These groups share a useful adoption pattern: they have real, repeatable, evidence-heavy workflows but often lack a clear first agentic operating model.
+The initial focus is repeatable work with explicit sources, reviewable artifacts, and a human able to decide whether the result meets the task.
 
 ## Core adoption loop
 
 ```text
-Real workflow
+One bounded workflow and pinned inputs
     ↓
-Guided first delegation
+Explicit permissions and acceptance checks
     ↓
-Finished artifact with evidence
+AI-assisted artifact with supporting evidence
     ↓
-Human acceptance or rejection
+Human acceptance, partial acceptance, or rejection
     ↓
-Time, quality, and failure measurement
+Record limitations, review effort, and next correction
     ↓
-Repeat usage
-    ↓
-Plan or API decision based on economics
+Repeat or stop based on the observed result
 ```
+
+For measured pilots, freeze the human-only baseline before the run. Plan or API decisions come after account-specific access, usage, and budget checks—not from an unmeasured promise of savings.
 
 ## Proposed first workflow
 
 **Codex for QA and Product Audit**
 
 ```text
-Product or repository
+One product journey, endpoint, or document
     ↓
-Requirements and journey mapping
+Requirements and unknowns
     ↓
-Risk-based test model
+Risk-based checks
     ↓
-API / UI / workflow investigation
+Bounded investigation
     ↓
-Evidence-backed findings
+Evidence-backed findings and untested conditions
     ↓
-Prioritized product backlog
-    ↓
-Management-ready report
+Prioritized corrections for human review
 ```
 
-The workflow is designed to produce inspectable artifacts rather than impressive but unverifiable claims.
+A useful first artifact might be six API test scenarios with source references. Drafted scenarios are not executed tests; a finished report is not automatic acceptance.
 
 ## Repository map
 
@@ -83,12 +89,13 @@ The workflow is designed to produce inspectable artifacts rather than impressive
 - [`docs/01-market-audit.md`](docs/01-market-audit.md) — dated product and billing snapshot, historical adoption evidence, and messaging hypotheses.
 - [`docs/02-plf-launch-strategy.md`](docs/02-plf-launch-strategy.md) — internal educational launch and conversion sequence.
 - [`docs/03-eight-week-pilot.md`](docs/03-eight-week-pilot.md) — bounded pilot scope, delivery plan, and acceptance criteria.
-- [`docs/04-partnership-proposal.md`](docs/04-partnership-proposal.md) — proposed collaboration structure for OpenAI or an implementation partner.
+- [`docs/04-partnership-proposal.md`](docs/04-partnership-proposal.md) — proposed collaboration structure; not an agreed OpenAI partnership.
 - [`docs/05-measurement-framework.md`](docs/05-measurement-framework.md) — activation, retention, value, and revenue-attribution model.
-- [`docs/06-claim-evidence-matrix.md`](docs/06-claim-evidence-matrix.md) — material claims, official sources, qualifiers, and machine-checkable review dates.
+- [`docs/06-claim-evidence-matrix.md`](docs/06-claim-evidence-matrix.md) — material claims, sources, qualifiers, and review dates.
 - [`docs/07-partner-entry-strategy.md`](docs/07-partner-entry-strategy.md) — proof-led co-delivery and direct Partner Network paths.
 - [`docs/08-documentation-integrity.md`](docs/08-documentation-integrity.md) — link, freshness, workflow-security, and manual-fallback controls.
 - [`docs/09-source-review-2026-09-17.md`](docs/09-source-review-2026-09-17.md) — source changes, retired claims, and review limitations.
+- [`docs/10-source-review-2026-09-28.md`](docs/10-source-review-2026-09-28.md) — latest scoped review and public-entry preparation.
 
 ### Runnable pilot kit
 
@@ -133,11 +140,11 @@ Final result:
 - four confirmed process or documentation gaps;
 - no safety or authority violation observed.
 
-The case triggered corrections to pricing interpretation, claim traceability, pilot assets, participant consent, partner-entry strategy, and documentation-integrity controls.
+The case triggered corrections to pricing interpretation, claim traceability, pilot assets, participant consent, partner-entry strategy, and documentation-integrity controls. These are findings about the recorded historical state, not proof that every gap remains present today.
 
 ## Immediate milestone
 
-Keep the documentation-integrity gate current, then run four additional friendly participant workflows before external performance-based outreach. Freeze each baseline before the run and publish only consented evidence.
+Review the source corrections and keep the documentation-integrity gate current. Then run four additional friendly participant workflows before external performance-based outreach. Freeze each baseline before the run and publish only consented evidence.
 
 The seed cohort does not claim attributable subscription or API revenue.
 
@@ -145,9 +152,11 @@ The seed cohort does not claim attributable subscription or API revenue.
 
 **Phase:** Pilot Kit v0.2 with CAL-001 signed off; documentation-integrity controls are implemented.
 
-**Evidence maturity:** one internal case; additional seed cases remain a milestone.
+**Evidence maturity:** one internal case; additional seed cases remain a milestone. This is an open laboratory, not a validated service at scale.
 
-**Next gate:** review the September source corrections and validate documentation, then collect four additional real seed cases.
+**Validation:** inspect the [latest documentation-integrity runs](https://github.com/safal207/Codex-Adoption-Lab/actions/workflows/docs-integrity.yml) and the source-review records. A green PR check alone does not mean external URLs were probed or a maintainer approved the sources.
+
+**Next gate:** maintainer source review, documentation validation, and a check of the three Start here paths in the default branch before directing new traffic.
 
 ## Primary official sources
 
