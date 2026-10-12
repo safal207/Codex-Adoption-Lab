@@ -1,6 +1,6 @@
 # Codex market and pricing audit
 
-**Source review date:** 2026-09-17
+**Original source review date:** 2026-09-17. [October 12 corrections](11-source-review-2026-10-12.md) for C-001/C-002/C-019/C-014 were personally source-verified by Aleksey Safonov; other claim dates are unchanged. Before-use review still applies.
 
 **Scope:** plan access and billing structure, historical adoption evidence, and Lab adoption hypotheses. This is not a current model-price catalogue.
 
@@ -27,7 +27,7 @@ The public ChatGPT plan ladder currently includes:
 | Free | Limited Codex access | Demonstrate that an agent can complete a real task |
 | Go | Limited Codex access | Keep light users engaged before professional adoption |
 | Plus | Expanded Codex usage | Establish a weekly professional workflow |
-| Pro | Maximum Codex tasks, subject to limits | Support intensive, parallel, daily agent work |
+| Pro | Tier-dependent Codex usage; no fixed maximum task guarantee | Support intensive, parallel, daily agent work |
 | Business | Shared secure workspace, administration, analytics, budgeting, and Codex | Move from individual success to team deployment |
 | Enterprise | Custom scale, controls, support, and commercial terms | Govern agentic work in large organizations |
 
@@ -41,7 +41,7 @@ Legacy Codex-only seats are restricted to eligible workspaces that added that se
 
 ## 3. Billing structure at review
 
-For credit-based workspaces, the current [ChatGPT rate card](https://help.openai.com/en/articles/11481834) meters Work and Codex by input, cached-input, and output tokens. Some Enterprise workspaces still use legacy rates until migration; the applicable agreement matters. See `C-019` and `C-020`.
+For Business/Enterprise/Edu workspaces using flexible credit-based billing, the [ChatGPT rate card](https://help.openai.com/en/articles/11481834) prices Work/Codex model usage in credits per 1M input, cached-input, and output tokens in Standard mode. Included subscription limits and Enterprise agreements billed in USD require separate treatment. Some Enterprise workspaces still use legacy rates until migration; the applicable agreement matters. See `C-019` and `C-020`.
 
 The July migration summary has been removed because the redirected source does not support it as current guidance. The average-spend estimate remains in the source, but is omitted here because it cannot establish a participant budget. See the [review record](09-source-review-2026-09-17.md).
 

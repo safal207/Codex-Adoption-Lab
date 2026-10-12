@@ -29,7 +29,7 @@ This hypothesis requires real participant measurement; the kit does not establis
 
 ## Evidence and scope
 
-The [September 28 partial source review](docs/10-source-review-2026-09-28.md) records the claims rechecked and the remaining approval boundaries. The [September 17 review](docs/09-source-review-2026-09-17.md) records earlier corrections and withdrawn claims. Source access, automated freshness checks, external HTTP reachability, and human approval are separate checks.
+The [October 12 source inspection](docs/11-source-review-2026-10-12.md) records corrections for four claims and Aleksey Safonov's October 12 personal source-verification confirmation. Their dates were renewed under the existing rules; before-use checks still apply. The [September 28 partial source review](docs/10-source-review-2026-09-28.md) records the claims rechecked and the remaining approval boundaries. The [September 17 review](docs/09-source-review-2026-09-17.md) records earlier corrections and withdrawn claims. Source access, automated freshness checks, external HTTP reachability, and human approval are separate checks.
 
 The [market audit](docs/01-market-audit.md) separates dated product information from historical adoption research. Pricing and access must be checked for the participant's actual account before a recommendation. Consult the [claim–evidence matrix](docs/06-claim-evidence-matrix.md) and [documentation-integrity rules](docs/08-documentation-integrity.md), rather than treating an old price or model table as current.
 
