@@ -1,6 +1,6 @@
 # Codex market and pricing audit
 
-**Original source review date:** 2026-09-17. [October 12 proposed corrections](11-source-review-2026-10-12.md) await human source verification; pricing/access guidance must not be treated as freshness-approved.
+**Original source review date:** 2026-09-17. [October 12 corrections](11-source-review-2026-10-12.md) for C-001/C-002/C-019/C-014 were personally source-verified by Aleksey Safonov; other claim dates are unchanged. Before-use review still applies.
 
 **Scope:** plan access and billing structure, historical adoption evidence, and Lab adoption hypotheses. This is not a current model-price catalogue.
 
