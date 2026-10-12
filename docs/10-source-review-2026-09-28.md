@@ -1,6 +1,6 @@
 # Source review and public entry preparation — 2026-09-28
 
-**Review date:** 2026-09-28 (UTC). **Approval:** assistant-assisted source review; maintainer sign-off pending in draft PR #12.
+**Review date:** 2026-09-28 (UTC). **Approval at review time:** assistant-assisted source review; sign-off was pending in PR #12. **Status correction (2026-10-12):** PR #12 merged on September 28 at `71e80a170cb3cb494249108553dc1f383bbe5055`. The [pre-merge review](https://github.com/safal207/Codex-Adoption-Lab/pull/12#pullrequestreview-5344750243) expressly distinguishes merge authorization from independent human source verification; that verification remains unrecorded. Historical observations below are not renewed by this correction.
 
 This continues the existing [September 17 review](09-source-review-2026-09-17.md), rather than creating a competing correction stack. The starting PR head was `6d6e58c70be4bd806b2f4da4011a06d0099b3476`; its base was `98a9c273458f6550207e4536648deedfb16c3ff9`.
 
