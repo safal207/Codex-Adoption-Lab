@@ -1,6 +1,6 @@
 # Source-content recheck — 2026-10-19
 
-**Status: assistant source inspection only; new owner verification is pending.** This record does not renew the dates in the active matrix, retroactively validate earlier evidence, or authorize external usage. It supplements, but does not overwrite, the [owner-verified October 12 inspection](11-source-review-2026-10-12.md) on [PR #13](https://github.com/safal207/Codex-Adoption-Lab/pull/13).
+**Status: assistant source inspection only; new owner verification is pending.** Proposed replacement statements are staged in the [October 19 maintainer review packet](13-proposed-claim-matrix-changes-2026-10-19.md), not in the active matrix. This record does not renew the dates or rewrite the active claim text, retroactively validate earlier evidence, or authorize external usage. It supplements, but does not overwrite, the [owner-verified October 12 inspection](11-source-review-2026-10-12.md) on [PR #13](https://github.com/safal207/Codex-Adoption-Lab/pull/13).
 
 ## Trigger, scope and evidence boundary
 
@@ -22,9 +22,9 @@ OpenAI's official pages below were retrieved and their relevant content inspecte
 
 ## What changed and what did not
 
-- The proposed matrix copy for these seven IDs is more specific about current plan-access wording, seat billing, partner tier versus enrollment, applicable credit billing and study methodology. This does not create new official terms.
-- The four October 12 owner-verified rows (C-001/C-002/C-014/C-019) **retain their recorded October 12 access dates and October 19/26 review deadlines**; the October 19 copy refinements require a new source-sign-off if used externally.
-- The historical research rows (C-010/C-011/C-012) retain their September 17 access dates and October 19 deadlines. They intentionally become stale on October 20 if no fresh human review is recorded.
+- Seven exact proposed edits, more specific about plan-access wording, seat billing, partner tier versus enrollment, applicable credit billing and study methodology, are [staged for human verification](13-proposed-claim-matrix-changes-2026-10-19.md). The active matrix retains the prior documented versions. This inspection does not create new official terms.
+- The four October 12 owner-verified rows (C-001/C-002/C-014/C-019) **retain their exact October 12 wording, access dates and October 19/26 review deadlines**. The October 19 copy proposals require separate source sign-off before replacing any active statement.
+- The historical research rows (C-010/C-011/C-012) retain their September 17 recorded text, access dates and October 19 deadlines. They intentionally become stale on October 20 if no fresh human review is recorded.
 - Other official claims (C-003/C-004/C-013/C-020) are not renewed merely because some of their URLs overlap with this review. Retired C-005–C-009 remain retired and their original values remain in Git history.
 - [PR #12](https://github.com/safal207/Codex-Adoption-Lab/pull/12) is merged into main (at the baseline SHA); its historical draft/review status is preserved in the September and October 12 records. Its merge is not evidence that all source statements were independently verified.
 
@@ -38,4 +38,4 @@ Scheduled or manually triggered checks probe external URLs; pull-request and pus
 
 The maintainer should personally open the linked official sections and independently accept, amend or reject **each** of C-001/C-002/C-014/C-019/C-010/C-011/C-012. Then update `Accessed` and `Review by` with evidence of actual human verification and the existing weekly, fortnightly, or periodic cadence; record reviewer, date and scope. Claims still outside the window must not be used in external materials. Do not alter the checker, relax deadline rules, mark `BLOCKED` as `passed`, or infer a partner decision or measurable customer outcomes from documentation alone.
 
-**Audit attribution:** source-content inspection by ChatGPT assistant on 2026-10-19; owner verification of *this pass* not recorded. The separate October 12 owner attestation continues to apply only to the then-reviewed four claims.
+**Audit attribution:** source-content inspection by ChatGPT assistant on 2026-10-19; owner verification of *this pass* not recorded. The complete copy-edit packet is in [the proposal file](13-proposed-claim-matrix-changes-2026-10-19.md). The October 12 owner attestation continues to apply only to the four claims in their October 12 wording.
