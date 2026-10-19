@@ -75,6 +75,15 @@ A claim fails after its `Review by` date. A human must then:
 
 Do not extend a review date without checking the source.
 
+### Separate proposed wording from approved evidence
+
+Updating the text of a `Material claim`, its classification, or its official evidence is a **substantive change**, even if the review date stays the same. An assistant-only inspection must not rewrite an already reviewed row while leaving an older `Accessed` date in place: that would make the new language appear verified under the old review.
+
+Instead, leave the active claim, source attribution, and review dates unchanged. Put proposed replacement text, source links, qualifications, and a claim-by-claim human review checklist in a separate document. Promote only the specifically reviewed wording after a human opens the cited official source, accepts/revises/retires the claim, and records the actual verification date and reviewer. A general authorization to edit documentation is **not** a human attestation to having personally reviewed an official source.
+
+A successful checker or GitHub Actions run establishes only that structural, freshness and prohibited-language rules were satisfied on the tested revision and date. It does not establish that OpenAI statements are correct, that an external URL is semantically authoritative, that an account has particular access, or that the owner independently signed off. Likewise, HTTP 403 is `blocked`, not evidence of a missing page; reading content through another client does not convert that original response to `passed`.
+
+
 ## Local or manual fallback
 
 From the repository root:

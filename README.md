@@ -29,7 +29,7 @@ This hypothesis requires real participant measurement; the kit does not establis
 
 ## Evidence and scope
 
-The [September 28 partial source review](docs/10-source-review-2026-09-28.md) records the claims rechecked and the remaining approval boundaries. The [September 17 review](docs/09-source-review-2026-09-17.md) records earlier corrections and withdrawn claims. Source access, automated freshness checks, external HTTP reachability, and human approval are separate checks.
+The [October 12 source inspection](docs/11-source-review-2026-10-12.md) records corrections for four claims and Aleksey Safonov's October 12 personal source-verification confirmation. Their dates were renewed under the existing rules; before-use checks still apply. The [October 19 assistant source-content comparison](docs/12-source-review-2026-10-19.md) and its [seven exact proposed edits](docs/13-proposed-claim-matrix-changes-2026-10-19.md) are **not active assertions**: they require owner verification and have not changed any claim wording or review deadline in the active matrix. The [September 28 partial source review](docs/10-source-review-2026-09-28.md) records the claims rechecked and the remaining approval boundaries. The [September 17 review](docs/09-source-review-2026-09-17.md) records earlier corrections and withdrawn claims. Source access, automated freshness checks, external HTTP reachability, and human approval are separate checks.
 
 The [market audit](docs/01-market-audit.md) separates dated product information from historical adoption research. Pricing and access must be checked for the participant's actual account before a recommendation. Consult the [claim–evidence matrix](docs/06-claim-evidence-matrix.md) and [documentation-integrity rules](docs/08-documentation-integrity.md), rather than treating an old price or model table as current.
 
@@ -95,7 +95,10 @@ A useful first artifact might be six API test scenarios with source references. 
 - [`docs/07-partner-entry-strategy.md`](docs/07-partner-entry-strategy.md) — proof-led co-delivery and direct Partner Network paths.
 - [`docs/08-documentation-integrity.md`](docs/08-documentation-integrity.md) — link, freshness, workflow-security, and manual-fallback controls.
 - [`docs/09-source-review-2026-09-17.md`](docs/09-source-review-2026-09-17.md) — source changes, retired claims, and review limitations.
-- [`docs/10-source-review-2026-09-28.md`](docs/10-source-review-2026-09-28.md) — latest scoped review and public-entry preparation.
+- [`docs/10-source-review-2026-09-28.md`](docs/10-source-review-2026-09-28.md) — historical September review and public-entry preparation.
+- [`docs/11-source-review-2026-10-12.md`](docs/11-source-review-2026-10-12.md) — four-claim review with dated owner attestation.
+- [`docs/12-source-review-2026-10-19.md`](docs/12-source-review-2026-10-19.md) — seven-claim assistant comparison and HTTP 403 boundary.
+- [`docs/13-proposed-claim-matrix-changes-2026-10-19.md`](docs/13-proposed-claim-matrix-changes-2026-10-19.md) — exact text proposals and maintainer sign-off checklist; not yet active.
 
 ### Runnable pilot kit
 
