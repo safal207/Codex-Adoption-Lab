@@ -1,6 +1,6 @@
 # Proposed claim-matrix edits — 2026-10-19 (awaiting human verification)
 
-**State: PROPOSED / HOLD, not approved, not an active matrix.** This is the complete copy-edit packet from the October 19 assistant [official-source inspection](12-source-review-2026-10-19.md). It is intentionally separated from the [active claim matrix](06-claim-evidence-matrix.md), which retains the earlier verifiably attributed wording and its unchanged review dates.
+**State: PROPOSED / HOLD, not approved, not an active matrix.** This is the complete copy-edit packet from the October 19 assistant [official-source inspection](12-source-review-2026-10-19.md). It is intentionally separated from the [active claim matrix](06-claim-evidence-matrix.md), which retains the earlier recorded wording and unchanged review dates, without implying independent human sign-off for the September historical-statistics rows.
 
 **Approval contract:** On a per-claim basis, a human maintainer must open the relevant official page, compare its cited section with the proposed wording and the earlier statement, record any account/methodology limits, accept/revise/retire the claim, and only then update `Accessed` and `Review by` with the real human verification date according to the existing cadence. Do not backdate the review, extend a deadline to make CI green, infer the reviewer's approval from an assistant run, or turn the original HTTP 403 into a source-validity judgment.
 
