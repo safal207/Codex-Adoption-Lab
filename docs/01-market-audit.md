@@ -1,6 +1,6 @@
 # Codex market and pricing audit
 
-**Original source review date:** 2026-09-17. [October 12 corrections](11-source-review-2026-10-12.md) for C-001/C-002/C-019/C-014 were personally source-verified by Aleksey Safonov; other claim dates are unchanged. Before-use review still applies.
+**Original source review date:** 2026-09-17. [October 12 corrections](11-source-review-2026-10-12.md) for C-001/C-002/C-019/C-014 were personally source-verified by Aleksey Safonov; other claim dates are unchanged. Before-use review still applies. [October 19 assistant-only source comparison](12-source-review-2026-10-19.md) refines wording and methodology for seven claims without new human sign-off or any date renewal. Treat its edits as pending, not refreshed external guidance.
 
 **Scope:** plan access and billing structure, historical adoption evidence, and Lab adoption hypotheses. This is not a current model-price catalogue.
 
@@ -14,7 +14,7 @@ OpenAI's June 2026 publications reported that:
 - knowledge workers represented about 20% of users and were growing more than three times as fast as developers;
 - in May 2026, 70.2% of sampled individual users made at least one Codex request estimated to exceed one hour of human work.
 
-These are historical observations, not September user counts or Lab results. The task-duration estimate used an LLM judge and a random 0.1% sample of individual users. It is not a measurement of time saved. See claims `C-010` through `C-012`.
+These are historical observations from publications dated June 2 and June 25, not September/October user counts or Lab results. The May task-duration threshold was estimated by an LLM-as-judge using Codex transcripts for a random 0.1% sample of individual users. It is directional: neither verified task completion nor time saved was measured. See claims `C-010` through `C-012`.
 
 The Lab infers an opportunity to help people adopt broader workflows. Whether a guided first task improves paid conversion remains an experiment.
 
