@@ -1,6 +1,6 @@
 # Codex market and pricing audit
 
-**Original source review date:** 2026-09-17. [October 12 corrections](11-source-review-2026-10-12.md) for C-001/C-002/C-019/C-014 were personally source-verified by Aleksey Safonov; other claim dates are unchanged. Before-use review still applies. [October 19 assistant-only source comparison](12-source-review-2026-10-19.md) stages the [proposed seven-claim corrections](13-proposed-claim-matrix-changes-2026-10-19.md) outside the active matrix without a new human sign-off or any date renewal. The staged wording is not refreshed external guidance.
+**Original source review date:** 2026-09-17. Subsequent [November 24 review and owner attestation](14-source-review-2026-11-24.md) renews all 11 active official claims with qualifications retained. Earlier [October 12 corrections](11-source-review-2026-10-12.md) and [October 19 assistant-only source comparison](12-source-review-2026-10-19.md) remain historical. Before-use review still applies.
 
 **Scope:** plan access and billing structure, historical adoption evidence, and Lab adoption hypotheses. This is not a current model-price catalogue.
 
@@ -35,13 +35,13 @@ The `Primary adoption job` column is a Lab interpretation, not official plan lan
 
 ### Business pricing
 
-At this review, Business offers Standard and Premium seats. USD monthly equivalents are $20/$100 billed annually, or $25/$125 billed monthly. A workspace needs two seats in total; types can be mixed. Both include Codex, while API billing is separate. Regional pricing may differ.
+At this review, Business offers Standard and Premium seats. USD monthly equivalents are $20/$100 billed annually, or $25/$125 billed monthly. The current Business overview and signup guide permit starting a new workspace with one paid Standard or Premium seat; Codex Pricing still states 2+ users. Verify actual checkout eligibility and regional pricing rather than guaranteeing the one-seat minimum. Both seat types include ChatGPT, Work and Codex; API billing is separate.
 
 Legacy Codex-only seats are restricted to eligible workspaces that added that seat type before June 24, 2026. See claims `C-002` through `C-004` and the [Business overview](https://help.openai.com/en/articles/8792828-what-is-chatgpt-team/).
 
 ## 3. Billing structure at review
 
-For Business/Enterprise/Edu workspaces using flexible credit-based billing, the [ChatGPT rate card](https://help.openai.com/en/articles/11481834) prices Work/Codex model usage in credits per 1M input, cached-input, and output tokens in Standard mode. Included subscription limits and Enterprise agreements billed in USD require separate treatment. Some Enterprise workspaces still use legacy rates until migration; the applicable agreement matters. See `C-019` and `C-020`.
+For applicable flexible credit-based workspaces, the [ChatGPT rate card](https://help.openai.com/en/articles/11481834) specifies Work/Codex Standard-mode charges per million input, cached-input and output tokens. Verify eligibility, seat-specific treatment, speed multipliers, included limits and the workspace agreement; do not infer Premium rates from a section specifying standard seats. Some Enterprise workspaces retain legacy rates until migration, and USD agreements require separate treatment. API billing is separate. See `C-019` and `C-020`.
 
 The July migration summary has been removed because the redirected source does not support it as current guidance. The average-spend estimate remains in the source, but is omitted here because it cannot establish a participant budget. See the [review record](09-source-review-2026-09-17.md).
 
