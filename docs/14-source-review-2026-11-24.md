@@ -43,3 +43,11 @@ Main scheduled failure: [run 45233314775](https://github.com/safal207/Codex-Adop
 - [ ] Run Documentation Integrity on exact resulting head. An expired-claim failure is expected until the authorized renewal is applied. Do not weaken checker, dates or tests to obtain green.
 
 No merge, publication, partner application, or source attestation is included.
+
+## Subsequent owner attestation — November 24 Moscow time (November 23 UTC)
+
+The owner, Aleksey Safonov, explicitly stated in the task conversation:
+
+> Я лично проверил все 11 утверждений и официальные источники из ноябрьского отчёта Codex Adoption Lab. Подтверждаю их актуализацию с сохранением оговорок. Обнови активную матрицу и проверь CI PR #13. Не мержи.
+
+Scope: C-001, C-002, C-003, C-004, C-010, C-011, C-012, C-013, C-014, C-019, C-020. The owner reports personally verifying the official sources in this packet and approves updating the active matrix with qualifiers retained. This is a recorded human attestation, not independent evidence of browsing activity, not a GitHub APPROVED review and explicitly not merge authorization. The initial assistant-only section above is historical. UTC verification date: 2026-11-23. Weekly renewal through November 30 (C-001/C-002/C-019); fortnightly through December 7 (C-014); monthly or conservative 30-day historical recheck through December 23 (remaining seven claims). The before-use rules remain in effect. Business source conflict and actual-checkout caveat are retained in the active matrix; no claim of universal one-seat eligibility. No retired or non-official claim renewed. CI remains independently required.
